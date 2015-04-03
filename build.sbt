@@ -3,7 +3,7 @@ import android.Dependencies.{LibraryDependency, aar}
 
 android.Plugin.androidBuild
 
-platformTarget in Android := "android-19"
+platformTarget in Android := "android-22"
 
 name := "macroid-starter"
 
@@ -26,7 +26,7 @@ scalacOptions in (Compile, compile) ++= Seq(
 libraryDependencies ++= Seq(
   aar("org.macroid" %% "macroid" % "2.0.0-M3"),
   aar("com.google.android.gms" % "play-services" % "4.0.30"),
-  aar("com.android.support" % "support-v4" % "20.0.0"),
+  aar("com.android.support" % "support-v4" % "22.0.0"),
   compilerPlugin("org.brianmckenna" %% "wartremover" % "0.10")
 )
 
